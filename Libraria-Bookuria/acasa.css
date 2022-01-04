@@ -1,0 +1,501 @@
+@media screen and (min-width: 600px)
+{
+    body {
+        background-image: url('fundal.jpg');
+        background-size: cover;
+        padding: 0;
+        margin: 0;
+    }
+    header input, header div {display:none;}
+    nav{
+        width:100%;
+        height:4em;
+        background-color:aliceblue;
+        position: fixed;
+        top:0;
+        z-index: 10;
+    }
+
+    nav ul{
+        list-style-type:none;
+    }
+
+    nav a{
+        font-size: 1.5em;
+        text-decoration: none;
+        color: black;
+        display: block;
+        height:100%;
+        font-family: "Century Gothic",sans-serif;
+    }
+
+    ul.meniu{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+        flex-flow: nowrap;
+        justify-content: flex-start;
+    }
+    ul.meniu>li{
+        flex-grow: 1;
+        text-align: center;
+        height: 4em;
+        line-height: 4em;
+        width:100%;
+    }
+    ul.meniu>li> ul.submeniu{
+        display: none;
+        width:100%;
+        padding: 0;
+        margin: 0;
+        top: 0;
+    }
+    ul.meniu>li:hover>ul.submeniu{
+        display: block;
+        padding: 0;
+        margin: 0;
+        top: 0;
+        background-color: aliceblue;
+    }
+    ul.meniu li:hover{
+        background-color: white;
+        transition-property: background-color;
+        transition-duration: 1s;
+    }
+    ul.meniu >li>ul.submeniu a{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        top: 0;
+    }
+
+    h1{
+        width:100%;
+        height:5em;
+        line-height: 4.6em;
+        padding-top: 50px;
+    }
+    h1>span{
+        font-size: 40px;
+        text-indent: 20px;
+        font-family: "Century Gothic",sans-serif;
+    }
+    h1>img{
+        float: left;
+        height:5em;
+        line-height: 5.5em;
+    }
+
+    #acasa{
+        text-align: center;
+        font-family: "Century Gothic",sans-serif;
+    }
+    img{
+        height:30em;
+    }
+    h1 {
+        text-shadow: 2px 3px rgb(211, 211, 211);
+    }
+    p{
+        font-size: 25px;
+    }
+    .inceput{
+        border:5px aliceblue dotted;
+        font-size:25px;
+        margin-left:4%;
+        margin-right:4%;
+    }
+   #form{
+       border: 10px dotted pink;
+       font-family: "Century Gothic", sans-serif;
+       font-size: 20px;
+       margin-left: 25%;
+       margin-right: 25%;
+   }
+   fieldset
+    {
+         border: 5px dashed aliceblue ;
+         margin-left:4%;
+         margin-right:60%;
+         font-size: 20px;
+    }
+
+    #startquiz
+   {
+       align-content: center;
+       font-family: "Century Gothic", sans-serif;
+       font-size: 25px;
+       padding:10px;
+        border: 3px solid pink;
+        margin-left: 45%;
+
+   }
+    #trimitere
+   {
+       align-content: center;
+       font-family: "Century Gothic", sans-serif;
+       font-size: 25px;
+       padding:10px;
+        border: 3px solid aliceblue;
+        margin-left: 41.3%;
+        background-color: pink;
+
+   }
+   
+    #recomandare
+    {
+        text-align: center;
+        font-family: "Century Gothic", sans-serif;
+        font-size: 25px;
+        padding:10px;
+    }
+
+
+    #citit{
+        text-align: justify;
+        padding-left: 130px;
+        padding-right: 130px;
+        font-style:italic;
+        font-weight: normal;
+    }
+
+    #container-animatie{
+        width: 563px;
+        height: 472px;
+        overflow: hidden;
+        margin:auto;
+        border: 10px dotted pink;
+    }
+
+    #animata{
+        animation-name: animatie-citate;
+        animation-duration: 20s;
+        animation-delay: 0.5s;
+        animation-iteration-count:infinite;
+        text-align: center;
+        padding-right:20%;
+
+
+    }
+    #animata figure{
+        width:563px;
+        height:472px;
+        margin:auto;
+    }
+    #animata figcaption{
+        display:none;
+    }
+
+    @keyframes animatie-citate{
+        0% {margin-top:0;}
+        10%{margin-top:-472px;}
+        20%{margin-top:-472px;}
+        30%{margin-top:-944px;}
+        40%{margin-top:-944px;}
+        50%{margin-top:-1416px;}
+        60%{margin-top:-1416px;}
+        70%{margin-top:-1888px;}
+        80%{margin-top:-1888px;}
+        90%{margin-top:-2360px;}
+        1000%{margin-top:-2360px;}
+    }
+    h2{
+        font-size:40px;
+        text-shadow: 2px 2px rgb(230, 204, 219);
+        text-align:center;
+        font-family: "Century Gothic",sans-serif;
+    }
+    .rec{
+        font-size:25px;
+        margin-left:10%;
+        margin-right:3%;
+        font-family: "Century Gothic",sans-serif;
+    }
+
+    footer{
+        text-align: center;
+        font-family: "Century Gothic",sans-serif;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    body {
+        background-image: url('fundal.jpg');
+        background-size: cover;
+        padding-top: 0;
+        margin: 0;
+        top:0;
+        left:0;
+    }
+    header > input{
+        display: block;
+        position:fixed;
+        left : 15px;
+        top : 15px;
+        width : 40px;
+        height : 40px;
+        opacity: 0;
+        z-index: 9;
+    }
+
+    header > div{
+        display: block;
+        position:fixed;
+        left : 15px;
+        top : 15px;
+        width : 40px;
+        height : 40px;
+        z-index: 8;
+    }
+
+    header > div > div{
+        background-color : black;
+        margin-top: 5px;
+        height : 4px;
+        width:35px;
+        border-radius: 3px;
+    }
+    input:checked ~ nav{
+        display:block;
+        width:20%;
+        height:auto;
+        background-color: pink;
+        position: fixed;
+        top:0;
+        left: 0;
+        z-index: 7;
+        padding-top:50px;
+    }
+    header > input:checked + div >div:nth-child(1) {
+        transform:rotate(45deg) translate(13px,12px);
+    }
+
+    header > input:checked + div >div:nth-child(2) {
+        transform:scale(0);
+    }
+
+    header > input:checked + div >div:nth-child(3) {
+        transform:rotate(-45deg);
+    }
+    nav{
+        display: none;
+    }
+
+    nav ul{
+        list-style-type:none;
+    }
+
+    nav a{
+        font-size: 13px;
+        text-decoration: none;
+        color: black;
+        display: block;
+        height:100%;
+        font-family: "Century Gothic",sans-serif;
+    }
+
+    ul.meniu{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display:block;
+
+    }
+    ul.meniu>li{
+        text-align: center;
+        height: 4em;
+        line-height: 4em;
+        width:100%;
+        position: relative;
+    }
+    ul.meniu>li> ul.submeniu{
+        display: none;
+        width:100%;
+        padding: 0;
+        margin: 0;
+        top: 0;
+    }
+    ul.meniu>li:hover>ul.submeniu{
+        display: block;
+        padding: 0;
+        margin: 0;
+        top: 0;
+        background-color: pink;
+        position: absolute;
+        left: 100%;
+    }
+    ul.meniu li:hover{
+        background-color: white;
+        transition-property: background-color;
+        transition-duration: 1s;
+    }
+    ul.meniu >li>ul.submeniu a{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        top: 0;
+    }
+
+    h1{
+        width:100%;
+        height:0.5em;
+        padding-top: 15px;
+
+    }
+
+    h1>span{
+        font-size: 30px;
+        font-family: "Century Gothic",sans-serif;
+        float:right;
+        padding-right: 5%;
+    }
+    h1>img{
+        float: right;
+        height:1.5em;
+        line-height: 1em;
+
+    }
+
+    #acasa{
+        text-align: center;
+        font-family: "Century Gothic",sans-serif;
+    }
+    img{
+        height:172px;
+    }
+    h1 {
+        text-shadow: 2px 3px rgb(211, 211, 211);
+    }
+    p{
+        font-size: 25px;
+    }
+    .inceput{
+        padding-top: 10%;
+        padding-right: 5%;
+        padding-left: 5%;
+        text-align: center;
+        font-size:20px;
+    }
+    #form{
+        border: 10px dotted pink;
+        font-family: "Century Gothic", sans-serif;
+        font-size: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    fieldset
+    {
+        border: 5px dashed aliceblue ;
+        margin-left:4%;
+        margin-right:10%;
+        font-size: 20px;
+    }
+
+    #startquiz
+    {
+        align-content: center;
+        font-family: "Century Gothic", sans-serif;
+        font-size: 25px;
+        padding:10px;
+        border: 3px solid pink;
+        margin-left: 30%;
+
+    }
+    table {
+        width: 20%;
+        padding-right: 13px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        margin-left: 20%;
+        border: 10px dashed lightgreen;
+    }
+    tr,td{
+        font-family:"Century Gothic", sans-serif ;
+        font-size: 20px;
+        padding-left: 5%;
+    }
+    tr>td>.button{
+        font-family:"Century Gothic", sans-serif ;
+        font-size: 20px;
+    }
+    #recomandare
+    {
+        text-align: center;
+        font-family: "Century Gothic", sans-serif;
+        font-size: 25px;
+        padding:10px;
+    }
+
+
+    #citit{
+        text-align: justify;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-style:italic;
+        font-weight: normal;
+        font-size:20px;
+    }
+
+    #container-animatie{
+        width: 200px;
+        height: 172px;
+        overflow: hidden;
+        margin:auto;
+        border: 10px dotted pink;
+    }
+
+    #animata{
+        animation-name: animatie-citate;
+        animation-duration: 20s;
+        animation-delay: 0.5s;
+        animation-iteration-count:infinite;
+        text-align: center;
+        padding-right:20%;
+
+
+    }
+    #animata figure{
+        width:200px;
+        height:172px;
+        margin:auto;
+    }
+    #animata figcaption{
+        display:none;
+    }
+
+    @keyframes animatie-citate{
+        0% {margin-top:0;}
+        10%{margin-top:-172px;}
+        20%{margin-top:-172px;}
+        30%{margin-top:-344px;}
+        40%{margin-top:-344px;}
+        50%{margin-top:-516px;}
+        60%{margin-top:-516px;}
+        70%{margin-top:-688px;}
+        80%{margin-top:-688px;}
+        90%{margin-top:-860px;}
+        100%{margin-top:-860px;}
+    }
+
+    h2{
+        font-size:40px;
+        text-shadow: 2px 2px rgb(230, 204, 219);
+        text-align:center;
+        font-family: "Century Gothic",sans-serif;
+    }
+    .rec{
+        font-size:25px;
+        margin-left:10%;
+        margin-right:3%;
+        font-family: "Century Gothic",sans-serif;
+    }
+    footer{
+        text-align: center;
+        font-family: "Century Gothic",sans-serif;
+        padding-bottom: 10px;
+    }
+}
